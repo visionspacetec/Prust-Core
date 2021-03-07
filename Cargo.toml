@@ -3,6 +3,7 @@ name = "prust_core"
 version = "0.1.0"
 authors = ["syelman <selman.ozleyen2017@gtu.edu.tr>"]
 edition = "2018"
+repository = "https://github.com/visionspacetec/Prust-Core"
 
 [dependencies]
 byteorder = {version = "1.3.4", default-features = false }
