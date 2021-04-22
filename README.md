@@ -1,4 +1,7 @@
 
+[![crates.io](https://img.shields.io/crates/v/prust_core.svg)](https://crates.io/crates/prust_core)
+[![API](https://docs.rs/prust_core/badge.svg)](https://docs.rs/prust_core)
+[![WIKI](https://img.shields.io/badge/wiki-prust-yellow.svg)](https://github.com/visionspacetec/Prust/wiki)
 # Prust-Core
 This crate is device independent and is designed to create and read [PUS-C](https://ecss.nl/standard/ecss-e-st-70-41c-space-engineering-telemetry-and-telecommand-packet-utilization-15-april-2016/) packets. This crate doesn't require rust-std.
 
