@@ -2,9 +2,20 @@
 # Prust-Core
 This crate is device independent and is designed to create and read [PUS-C](https://ecss.nl/standard/ecss-e-st-70-41c-space-engineering-telemetry-and-telecommand-packet-utilization-15-april-2016/) packets. This crate doesn't require rust-std.
 
+# Requirements
+Rust nightly is required. To change the channel you can type:
+```
+rustup default nightly   
+```
+
+# Feature
+Currently Prust-Core supports the following services from [PUS-C](https://ecss.nl/standard/ecss-e-st-70-41c-space-engineering-telemetry-and-telecommand-packet-utilization-15-april-2016/):
+- ST[01] request verification
+- ST[03] housekeeping (partially)
+- ST[08] function management
 
 # Testing
-To do unit testing in std.
+To do unit testing in std enter:
 ```
 cargo test
 ```
