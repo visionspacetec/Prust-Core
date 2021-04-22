@@ -6,6 +6,8 @@ description = "A crate for encoding/decoding PUS-C packet data structures with e
 edition = "2018"
 repository = "https://github.com/visionspacetec/Prust-Core"
 readme = "README.md"
+license-file = "LICENSE"
+homepage = "https://github.com/visionspacetec/Prust#readme"
 
 [dependencies]
 byteorder = {version = "1.3.4", default-features = false }
