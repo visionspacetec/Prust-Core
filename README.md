@@ -26,5 +26,5 @@ cargo test
 
 # Example
 An example usage can be found in [Prust-FreeRTOS](https://github.com/visionspacetec/Prust-FreeRTOS) for the [VST104](https://github.com/visionspacetec/VST104-Sierra).  
-The document of the process can also be bound on the wiki: [How To Build This On VST104](https://github.com/visionspacetec/Prust/wiki/How-To-Build-This-On-VST104)
+The document of the process can also be bound on the wiki: [How To Build On VST104](https://github.com/visionspacetec/Prust/wiki/How-To-Build-On-VST104)
 
