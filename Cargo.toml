@@ -1,6 +1,6 @@
 [package]
 name = "prust_core"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["syelman <selman.ozleyen2017@gtu.edu.tr>", "visionspace <info@visionspace.com>"]
 description = "A crate for encoding/decoding PUS-C packet data structures with ease."
 edition = "2018"
