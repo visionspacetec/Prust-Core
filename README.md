@@ -11,11 +11,35 @@ Rust nightly is required. To change the channel you can type:
 rustup default nightly   
 ```
 
-# Feature
+# Supported Services of PUS-C
 Currently Prust-Core supports the following services from [PUS-C](https://ecss.nl/standard/ecss-e-st-70-41c-space-engineering-telemetry-and-telecommand-packet-utilization-15-april-2016/):
 - ST[01] request verification
-- ST[03] housekeeping (partially)
+    |Code|Description|
+    |-|-|
+    TM[1,1] | successful acceptance verification report
+    TM[1,2] | failed acceptance verification report
+    TM[1,3] | successful start of execution verification report
+    TM[1,4] | failed start of execution verification report
+    TM[1,5] | successful progress of execution verification report
+    TM[1,6] | failed progress of execution verification report
+    TM[1,7] | successful completion of execution verification report
+    TM[1,8] | failed completion of execution verification report
+    TM[1,10] | failed routing verification report
+
+- ST[03] housekeeping
+    |Code|Description|
+    |-|-|
+    TC[3,1] | create a housekeeping parameter report structure
+    TC[3,5] | enable the periodic generation of housekeeping parameter reports
+    TC[3,6] | disable the periodic generation of housekeeping parameter reports
+    TM[3,25] | housekeeping parameter report
+    TC[3,27] | generate a one shot report for housekeeping parameter report structures
+
+
 - ST[08] function management
+    |Code|Description|
+    |-|-|
+    TC[8,1] | perform a function
 
 # Testing
 To do unit testing in std enter:
