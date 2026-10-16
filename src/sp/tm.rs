@@ -62,8 +62,11 @@ impl TmPacketHeader {
         let message_subtype = buffer[2];
         let message_type_counter = BigEndian::read_u16(&buffer[3..5]);
         let destination_id = BigEndian::read_u16(&buffer[5..7]);
-        // TODO: chech the size
-        let abs_time = BigEndian::read_u16(&buffer[7..7 + TmPacketHeader::ABS_TIME_LEN]);
+        let abs_time = if TmPacketHeader::ABS_TIME_LEN > 1 {
+            BigEndian::read_u16(&buffer[7..7 + TmPacketHeader::ABS_TIME_LEN])
+        } else {
+            0
+        };
         // TODO: check dest_id_id, flags and ver_no
         // TODO: use constants
         let ver_no = ver_no_and_status >> 4;

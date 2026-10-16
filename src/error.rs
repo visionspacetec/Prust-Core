@@ -16,17 +16,12 @@ pub enum Error {
     InvalidArg,
     CapacityError,
     HalTimoutError,
-    FreeRtosTimoutError
+    FreeRtosTimoutError,
 }
 
 impl core::convert::From<core::cell::BorrowMutError> for Error {
     fn from(item: core::cell::BorrowMutError) -> Self {
         Error::BorrowMutError(item)
-    }
-}
-impl core::convert::From<core::option::NoneError> for Error {
-    fn from(_: core::option::NoneError) -> Self {
-        Error::NoneError
     }
 }
 
@@ -52,7 +47,7 @@ pub fn get_err_code_n_data(err: Error) -> (u8, Vec<u8>) {
         Error::InvalidArg => (11, Vec::default()),
         Error::CapacityError => (12, Vec::default()),
         Error::HalTimoutError => (13, Vec::default()),
-        Error::FreeRtosTimoutError => (14, Vec::default())
+        Error::FreeRtosTimoutError => (14, Vec::default()),
     }
 }
 pub const ERR_CODE_COUNT: usize = 13;

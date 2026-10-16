@@ -1,6 +1,3 @@
-#![feature(allow_internal_unstable)]
-#![feature(try_trait)]
-#![feature(arbitrary_enum_discriminant)]
 #![cfg_attr(not(test), no_std)] // #![no_std] if not testing
 #[macro_use]
 extern crate arrayref;
@@ -14,7 +11,6 @@ extern crate core;
 /// Macro for debugging
 ///
 #[macro_export]
-#[allow_internal_unstable(print_internals, format_args_nl)]
 macro_rules! debug {
     () => ({
             #[cfg(any(feature="debug",test))]{
